@@ -1,0 +1,94 @@
+/* Contenedor General */
+.contact-container {
+    padding: 4rem 2rem;
+    background-color: #0F1E33; /* Fondo oscuro */
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    color: #FFC107; /* Acento amarillo */
+    margin-bottom: 1rem;
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    color: #A3B1C6; /* Gris claro */
+    margin-bottom: 2rem;
+}
+
+/* Contacto Principal */
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.contact-info, .contact-form {
+    flex: 1 1 45%;
+    background-color: #1C2B48;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3, .contact-form h3 {
+    color: #FFC107;
+    margin-bottom: 1rem;
+}
+
+/* Formulario */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #A3B1C6;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #FFC107;
+    border-radius: 4px;
+    background-color: #0F1E33;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.btn-submit {
+    background-color: #FFC107;
+    color: #0F1E33;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #E0A800;
+}
+
+.contact-email-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #FFC107;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.contact-email-btn:hover {
+    background-color: #FFA000;
+    color: #FFF;
+}

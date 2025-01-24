@@ -1,0 +1,220 @@
+/* Tipografías */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0A2540; /* Azul profundo */
+    color: #FFFFFF; /* Texto claro */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #FFC107; /* Acento amarillo */
+}
+
+.hero {
+    background: linear-gradient(135deg, #0A2540, #001D3D);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero .highlight {
+    color: #FFC107;
+}
+
+.hero p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #FFC107;
+    color: #0A2540;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.btn-cta:hover {
+    transform: scale(1.1);
+}
+
+/* Sobre Nosotros */
+.about-container {
+    padding: 4rem 2rem;
+    background-color: #0F1E33;
+}
+
+.about-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #FFC107;
+}
+
+/* Estadísticas */
+.about-right {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat {
+    background: #1C2B48;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 30%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.stat h3 {
+    font-size: 2.5rem;
+    color: #FFC107;
+}
+
+.stat:hover {
+    background-color: #FFC107;
+    transform: translateY(-5px);
+    color: #0A2540;
+}
+
+/* Encabezado con los logos */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #0A2540; /* Fondo azul */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Contenedor de los logos */
+.header-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Mayor separación entre logos */
+    padding-left: 10px; /* Espacio adicional del borde izquierdo */
+}
+
+/* Tamaño de los logos */
+.logo {
+    height: 80px; /* Altura ajustada */
+    width: auto; /* Mantener proporciones */
+    object-fit: contain;
+}
+/*leaflet Sucursal*/
+#leaflet-map {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    border: 1px solid #FFC107;
+    margin-top: 1rem;
+}
+/* Sección Galería */
+.gallery-container {
+    padding: 4rem 2rem;
+    background-color: #0F1E33;
+    text-align: center;
+}
+
+.gallery-container h2 {
+    font-size: 2.5rem;
+    color: #FFC107;
+    margin-bottom: 1rem;
+}
+
+.gallery-description {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    max-height: 300px; /* Ajuste de altura máxima */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: auto; /* Mantiene las proporciones */
+    object-fit: contain; /* Asegura que toda la imagen se muestre sin recortar */
+    border-radius: 8px; /* Mantiene los bordes redondeados */
+    max-height: 300px; /* Limita la altura según el recuadro */
+}
+
+/* Botón adicional en Hero */
+.contact-btn {
+    margin-left: 10px;
+    background-color: #28a745; /* Verde para diferenciarlo */
+}
+
+/* Enlaces a PDFs */
+.pdf-links {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.pdf-links h3 {
+    font-size: 1.5rem;
+    color: #FFC107;
+    margin-bottom: 1rem;
+}
+
+.pdf-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pdf-links ul li {
+    margin: 0.5rem 0;
+}
+
+.pdf-links ul li a {
+    color: #FFC107;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.pdf-links ul li a:hover {
+    color: #FFFFFF;
+}

@@ -1,0 +1,61 @@
+/* Contenedor General */
+.services-container {
+    padding: 4rem 2rem;
+    background-color: #0F1E33;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.services-container h2 {
+    font-size: 2.5rem;
+    color: #FFC107;
+    margin-bottom: 1rem;
+}
+
+.services-container .services-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #A3B1C6;
+}
+
+/* Tarjetas de Servicios */
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #1C2B48;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    flex: 1 1 30%;
+    max-width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+    filter: brightness(0) invert(1); /* Hace que los íconos sean blancos */
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #FFC107;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #A3B1C6;
+}

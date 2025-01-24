@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página oficial de Ingeniería Industrial y de Servicios Monte Sinai y SIMA">
+    <meta name="keywords" content="Ingeniería, Servicios Industriales, Proyectos, Monte Sinai">
+    <meta name="author" content="Monte Sinai y SIMA">
+    <title>Monte Sinai y SIMA</title>
+
+    <!-- Vinculación de estilos -->
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/services.css">
+    <link rel="stylesheet" href="src/styles/projects.css">
+    <link rel="stylesheet" href="src/styles/contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Encabezado -->
+<header>
+    <div class="header-logo-container">
+        <img src="src/assets/logos/1.svg" alt="Logo Monte Sinai" class="logo">
+        <img src="src/assets/logos/2.svg" alt="Logo SIMA" class="logo">
+    </div>
+</header>
+
+<!-- Sección Hero -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Ingeniería y Servicios <span class="highlight">Monte Sinai y SIMA</span></h1>
+        <p>Transformamos espacios y brindamos soluciones funcionales que resuelven necesidades reales y superan expectativas.</p>
+        <a href="#about" class="btn-cta">Conoce Más</a>
+        <a href="#contact" class="btn-cta contact-btn">Contáctanos</a>
+    </div>
+</section>
+
+<!-- Sección Sobre Nosotros -->
+<section id="about">
+    <div class="about-container">
+        <h2>Sobre Nosotros</h2>
+        <div class="about-content">
+            <div class="about-left">
+                <p>Somos un equipo de profesionales comprometidos en ofrecer soluciones integrales de ingeniería que aseguran calidad, eficiencia y resultados tangibles.</p>
+            </div>
+            <div class="about-right">
+                <div class="stat">
+                    <h3>30+</h3>
+                    <p>Años de Experiencia</p>
+                </div>
+                <div class="stat">
+                    <h3>500+</h3>
+                    <p>Clientes Atendidos</p>
+                </div>
+                <div class="stat">
+                    <h3>100+</h3>
+                    <p>Proyectos Completados</p>
+                </div>
+            </div>
+        </div>
+        <!-- Enlaces a PDFs -->
+        <div class="pdf-links">
+            <h3>Documentos Importantes</h3>
+            <ul>
+                <li><a href="/Pagina_Oficial_Montesinai_SIMA/src/assets/pdfs/cv_actualizado.pdf" target="_blank" download>Descargar CV</a></li>
+                <li><a href="src/assets/pdfs/organigrama.pdf" target="_blank" download>Descargar Organigrama</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Servicios -->
+<section id="services">
+    <div class="services-container">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-cards">
+            <div class="card">
+                <img src="src/assets/icons/air-conditioning-icon.svg" alt="Aire Acondicionado">
+                <h3>Aire Acondicionado</h3>
+                <p>Instalación, mantenimiento y reparación de sistemas de climatización.</p>
+            </div>
+            <div class="card">
+                <img src="src/assets/icons/electrical-installations-icon.svg" alt="Instalaciones Eléctricas">
+                <h3>Instalaciones Eléctricas</h3>
+                <p>Proyectos eléctricos para industrias, residencias y comercios.</p>
+            </div>
+            <div class="card">
+                <img src="src/assets/icons/remodeling-icon.svg" alt="Remodelaciones">
+                <h3>Remodelaciones</h3>
+                <p>Diseño y transformación de espacios para adaptarse a las necesidades de cada cliente.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Proyectos -->
+<section id="projects">
+    <div class="projects-container">
+        <h2>Proyectos</h2>
+        <p class="projects-description">Explora nuestros proyectos destacados...</p>
+        <div id="map-container">
+            <h3>Mapa Interactivo</h3>
+            <div id="map" style="width: 100%; height: 400px; border-radius: 8px; border: 1px solid #FFC107;"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Galería -->
+<section id="gallery">
+    <div class="gallery-container">
+        <h2>Galería</h2>
+        <p class="gallery-description">Explora algunos de nuestros momentos destacados.</p>
+        <div class="slider">
+            <div class="slides">
+                <!-- Imágenes dinámicas generadas aquí -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Contáctanos -->
+<!-- Sección Contáctanos -->
+<section id="contact">
+    <div class="contact-container">
+        <h2>Contáctanos</h2>
+        <p class="contact-description">¿Tienes preguntas o quieres iniciar un proyecto? Estamos aquí para ayudarte.</p>
+
+        <div class="contact-content">
+            <!-- Información de contacto -->
+            <div class="contact-info">
+                <h3>Información de Contacto</h3>
+                <p><strong>Teléfono:</strong> +52 4493493659</p>
+                <p><strong>Email:</strong> contact.sima.montesinai@gmail.com</p>
+                <p><strong>Dirección:</strong> Principal #49, Col. Viudas de Poniente, C.P. 20704, Asientos, Ags.</p>
+                <div id="leaflet-map" style="width: 100%; height: 300px; margin-top: 1rem; border-radius: 8px; border: 1px solid #FFC107;"></div>
+            </div>
+
+            <!-- Botón de contacto -->
+            <div class="contact-action">
+                <h3>Envíanos un Correo</h3>
+                <a href="mailto:contact.sima.montesinai@gmail.com" class="btn-cta contact-email-btn">
+                    Escríbenos
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Scripts -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="src/scripts/map.js"></script>
+<script src="src/scripts/gallery.js"></script>
+<script src="src/scripts/main.js"></script>
+
